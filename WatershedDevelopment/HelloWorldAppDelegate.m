@@ -11,12 +11,12 @@
 #import "HelloWorldViewController.h"
 
 @implementation HelloWorldAppDelegate
-
+@synthesize window,viewController;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[HelloWorldViewController alloc] initWithNibName:@"HelloWorldViewController" bundle:nil];
+    self.viewController = [[SplashViewController alloc] initWithNibName:@"SplashViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

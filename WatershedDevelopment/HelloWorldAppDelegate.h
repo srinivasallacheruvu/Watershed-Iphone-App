@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SplashViewController.h"
 @class HelloWorldViewController;
 
-@interface HelloWorldAppDelegate : UIResponder <UIApplicationDelegate>
+@interface HelloWorldAppDelegate : UIResponder <UIApplicationDelegate>{
+    UIWindow *window;
+    SplashViewController *viewController;
+}
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic)IBOutlet UIWindow *window;
 
-@property (strong, nonatomic) HelloWorldViewController *viewController;
+@property (strong, nonatomic) IBOutlet SplashViewController *viewController;
 
 @end
